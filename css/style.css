@@ -9,7 +9,7 @@ html {
   /* 62.5% of 16px=10px */
   font-size: 62.5%;
 }
-body {
+ body { 
   font-family: inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
   font-size: 2.4rem;
@@ -70,4 +70,22 @@ p {
 }
 .badges--small {
   font-size: 1.6rem;
+}
+.arrow-link{
+  color:var(--color-accent);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.arrow-link::after{
+  content: "-->";
+  /* margine left shoud be for arror spt fo text */
+  margin-left: 5px;
+  /* 0.15 for timing to move a arrow */
+  transition:margin 0.15 sec;
+}
+/* hover folting animation ke liye use hua h */
+.arrow-link:hover::after{
+  margin-left:10px ;
 }
