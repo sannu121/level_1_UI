@@ -32,6 +32,7 @@ h3 {
 }
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 1024px;) {
   body {
@@ -47,4 +48,26 @@ p {
   h3 {
     font-size: 2.4rem;
   }
+}
+/* badges */
+.badges {
+  /* border redius mtlb cone ko curv krna  */
+  border-radius: 20px;
+  padding: 1rem;
+/* phle bold tha phir html link wale me edit kiye */
+   font-weight: 600 
+  white-space: nowrap;
+  /* nowrape ka mtlb ek hi line me */
+  font-size: 2rem;
+}
+.badges--primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+.badges--secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+.badges--small {
+  font-size: 1.6rem;
 }
