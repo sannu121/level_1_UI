@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+/*----------------- navigation start------------*/
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar-brand img {
+  height: 40px;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+.navbar-nav li {
+  padding: 0 10px;
+  /* impo padding */
+}
+.navbar-nav li a {
+  float: right;
+  text-align: left;
+}
+#nav-bar ul li a:hover {
+  color: blue !important;
+}
+.navbar {
+  background: #fff;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.nav-link {
+  color: #555 !important;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* ------------navigation clouse------------ */
+#slider {
+  width: 100% !important;
+}
+.carousel-item img {
+  width: 1400px !important;
+  height: 500px !important;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: inherit !important;
+}
+.carousel-caption h5 {
+  color: #fff;
+  font-size: 42px;
+}
+/* ---------------------pta nhi-------------- */
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #555;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#about .btn {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.about-contant {
+  padding-top: 10px;
+}
+.skills-bar p {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.progress-bar {
+  border-radius: 16px;
+}
+.progress {
+  border-radius: 16px !important;
+  margin-bottom: 20px;
+}
+/* -----------------------------------section bar--------------- */
+#section {
+  background: linear-gradient(100deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../banner.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #efefef;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+#section h1 {
+  text-align: center;
+  color: #efefef !important;
+  padding-bottom: 10px;
+}
+/* hover effect for  btom lining- */
+#section h1::after {
+  content: "";
+  background-color: #efefef;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+.icon {
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 10px 10px 10px 17px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.section {
+  margin-top: 40px;
+}
+#section p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #ccc;
+}
+.section .col-md-3:hover {
+  background: #007bff;
+  cursor: pointer;
+  transition: 0.7s;
+}
+/* ----------------------------------------team-------------------------- */
+#team {
+  padding: 40px !important;
+}
+.profile-pic {
+  margin-top: 25px;
+  padding-top: 20px;
+}
+.profile-pic.img-box {
+  opacity: 1;
+  display: block;
+  position: relative;
+}
+.img-box img {
+  width: 200px;
+  height: 200px;
+  filter: grayscale(1);
+}
+.img-box img:hover {
+  width: 200px;
+  height: 200px;
+  filter: grayscale(0);
+  cursor: pointer;
+}
+.contnair h1 {
+  text-align: center;
+}
+.profile-pic h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #007bff;
+}
+.profile-pic h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+/* ----------------------icon-------- */
+#team.fa {
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+  color: #007bff !important;
+  background: #fff;
+  border-radius: 50%;
+}
+.img-box ul {
+  padding: 15px 0;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.img-box ul li {
+  padding: 5px;
+  display: inline-block;
+}
+.img-box ul:hover {
+  opacity: 1;
+}
+.img-box ul,
+.img-box ul li {
+  transition: 0.5s;
+}
+/* -------------------------------------------our promo----------------------- */
+#promo {
+  background-image: linear-gradient(
+      100deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+  font-family: sans-serif;
+  font-size: 38px;
+}
+/* -------------------------------------price card--------------------------------- */
+
+#price {
+  padding: 40px 60px;
+  background: #efefef;
+}
+#price h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.single-price {
+  margin: 10px auto;
+  display: inline;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.5;
+}
+.single-price:hover {
+  box-shadow: 0 2 20px #333;
+}
+.price-head {
+  background-color: #2196f3;
+  display: inline;
+  float: left;
+  padding: 10px 5px;
+  text-align: center;
+  width: 100%;
+}
+.price-head h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.price-head P {
+  font-size: 25px;
+  color: #ccc;
+  font-weight: bold;
+  line-height: 30px;
+}
+span {
+  font-size: 15px;
+}
+.price-contant {
+  display: inline;
+
+  width: 100px;
+  padding: 0 15px;
+}
+.price-contant ul li {
+  border-bottom: 1px solid #efefef;
+  padding: 15px 15px;
+  list-style: none;
+}
+ul li :last-child {
+  border: none;
+}
+.fa-check-circle {
+  padding-right: 15px;
+  color: green;
+  font-size: 25px;
+}
+.fa-times-circle {
+  padding-right: 15px;
+  color: red;
+  font-size: 25%;
+}
+.price-btn {
+  display: inline;
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 15px 15px 30px;
+}
+.buy-btn {
+  background-color: #2126f3;
+  display: inline-block;
+  padding: 15px 50px;
+  font-size: 18px;
+  transition: 0.5s;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff !important;
+}
+.buy-btn:hover {
+  border: 1px solid#fff;
+  background-color: #2196f3;
+}

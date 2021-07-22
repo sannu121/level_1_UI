@@ -1,0 +1,403 @@
+html,body{
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+/* globle class */
+a{
+    text-decoration: none;
+    color: #3f4954;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none; 
+    
+}
+h1{
+    font-family: "lexend", sans-serif;
+    font-size: 2.5rem;
+}
+h3{
+    font-family: "Adel",sans-serif; 
+    font-size: 1.3rem;
+}
+.btn1{
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-family: "livvic",sans-serif;
+    cursor: pointer;
+}
+.contanier{
+    margin: 0 5vw;
+}
+.text-gray{
+    color: gray;
+}
+/* globle class */
+
+/* ****************************************************navigation********************************* */
+.nav{
+    background: white;
+    padding: 0 2rem;
+     height: 0rem;
+     min-height: 10vh; 
+    overflow: hidden;
+    /* agar alag se nav bnana ho */
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+.nav .nav-items{
+    /* list-style-type: none; */
+    display: flex;
+    margin: 0;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: "Adel",sans-serif;
+}
+.nav .nav-items .nav-link:hover{
+    background-color: #353535;
+}
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+
+.nav .nav-brand a{
+     font-family:"lexend" , sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    /* color: #3f4954; */
+    
+}
+.nav .social{
+    padding: 1.4rem 0rem;
+}
+.nav .social i{
+    padding: 0 0.2rem;
+}
+.nav .social i:hover{
+    color: #a1c4cf;
+}
+
+/************************************************* main 1***********************/
+
+main .site-title{
+    background: url(../images/Background-image.png);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+main .site-title .site-background{
+    padding-top: 12rem;
+    text-align: center;
+    color: white;
+
+}
+main .site-title h1,h3{
+    margin: 0.3rem;
+    /* font weight style in globe */
+
+}
+main .site-title .btn1{
+    margin: 1.8rem;
+    background-color: #d8f3dc;
+
+}
+main .site-title .btn1:hover{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+/* main 2*/
+main .blog-bag{
+    background: url(../images/Abract01.png);
+    height: 100vh;
+    width: 100%;
+    background-position: right;
+    background-repeat: no-repeat;}
+   
+main .blog-text{
+    margin: 2rem 0.5rem 1rem 0;
+    padding: 2rem;
+    text-align: center;
+}
+main .blog-text h1{
+    margin: .5rem;
+    color: #3f4954;
+}
+main .blog-text h1::after {
+    content: "";
+    background-color:#3f4954;;
+    display: block;
+    height: 3px;
+    width: 15%;
+    margin: 13px auto 2px;
+  }
+  /* main ******card compo*************/
+  main .flex-row{
+    justify-content: center;  } 
+
+ main .col-md-4 {
+margin: 2rem 2rem;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.4);
+ } 
+
+ main .col-md-4 .col{
+    display: flex;  
+    flex-direction: column;
+   align-items: center;
+  }
+  
+
+ main .col-md-4 .col h4{
+     font-family: "lexend",sans-serif;
+     font-weight: bold;
+     color: #3f4954;
+     margin-bottom: 0.3rem;
+ }
+ main .botom-title span{
+     margin-top: 0.5rem;
+    font-family: "lexend",sans-serif; 
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    margin-top: 0.5rem;
+
+ } 
+.btn2{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 3rem;
+    background:#1e96fc ;
+    
+}
+ /* mainx ******card compo*******x******/
+
+/* *********************************side contant***************** */
+main .side-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 5rem;
+}
+main .post-contant{
+    width: 100%;
+    
+}
+main .side-content .post-contant> .post-img, .post-tital{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+main .side-content .post-contant .post-info{
+    background: mediumaquamarine;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 3rem;
+}
+main .side-content .post-img div{
+    overflow: hidden;
+}
+main .side-content .post-contant .post-img .img{
+    width: 100%;
+    transition: all 1s ease;
+
+}
+main .side-content .post-contant .post-img .img:hover{
+    transform: scale(1.3);
+}
+main .side-content .post-contant .post-img .post-info span{
+    margin: 0 0.5rem;
+}
+main .post-tital a{
+    font-family: "anton", sans-serif;
+    font-size: 1.5rem;
+}
+main .post-tital p{
+    font-family: "lexend",sans-serif;
+    color: #3f4954;
+}
+
+main .post-contant .post-tital .post-btn{
+    border-radius: 0;
+    padding: 0.7rem 1.5rem;
+    background: #52b69a;
+    font-weight: bold;
+}
+/* ********************************************sidebar 1******************/
+.side-content .pagination{
+    justify-content: center;
+    margin: 4rem 0;
+    color: #3f4954;
+
+}
+.side-content .pagination a{
+    padding: 0.6rem 0.9rem;
+     margin: 0 .3rem;
+    border-radius: 2rem;
+    font-family: "lexend",sans-serif;
+}
+
+.side-content .pagination .pages{
+    background-color: #3f4954;
+    color: white;
+}
+.side-content .sidebar .catagory h2{
+    font-family: "lavvic",sans-serif;
+}
+.side-content .sidebar .cata-list .list-items{
+    font-family: "lavvic",sans-serif;
+    background-color: #caf0f8;
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.side-content .sidebar .cata-list .list-items a{
+    color: black;
+}
+/*********************************side bar 2 */
+
+.side-content .sidebar .popular-post .post-contant{
+    padding: 1rem 0;
+}
+.side-content .sidebar .popular-post h2{
+    padding-top: 8rem;
+    font-family: "lavvic",sans-serif;
+}
+.side-content .sidebar .popular-post .post-info{
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: white;
+    
+
+}
+.side-content .sidebar .popular-post .post-tital a{
+    font-size: 1rem;
+}
+/* log in page */
+.side-content .sidebar .newslatter{
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-top: 4rem;
+}
+.side-content .sidebar .newslatter h2{
+    font-family: "lavvic",sans-serif;
+}
+
+.side-content .sidebar .newslatter .form-element{
+    padding:.5rem 2rem ;
+}
+.side-content .sidebar .newslatter .input-element{
+    height: 1.9rem;
+    width: 80%;
+    padding: .3rem .5rem;
+    font-size: 1rem;
+    font-family: "lavviv",sans-serif;
+}
+.side-content .sidebar .newslatter .form-btn{
+    border-radius: 0;
+    padding: .8rem 32%;
+    margin: 1rem 0;
+    background-color:#caf0f8; 
+}
+.side-content .sidebar .popular{
+padding: 3rem 1rem;
+}
+.side-content .sidebar .popular h2{
+    font-family: "lavvic",sans-serif;
+}
+.side-content .sidebar .popular-tags .tag{
+    padding: .4rem 1rem;
+    background-color:#caf0f8 ;
+    margin: .4rem .6rem;
+    border-radius: 3rem;
+    font-family:"lavvic",sans-serif ;
+}
+.side-content .sidebar .popular-tags {
+    justify-content: start !important;
+
+}
+.footer{
+    height: 100%;
+    background: black;
+    position: relative;
+}
+footer .contanier{
+    display: grid;
+    grid-template-columns:repeat(4,25%);
+}
+footer .contanier div{
+    flex-grow: 1;
+    /* grow as items */
+    flex-basis: 0;
+    /* as a width */
+    padding: 3rem 0.9rem;
+}
+
+
+
+
+
+footer .contanier .about-us h2{
+    font-family: "lavvic",sans-serif;
+    color: white;
+}
+footer .contanier .about-us p{
+    font-family:"lavvic",sans-serif ;
+    color:#3f4954 ;
+}
+footer .newslatter h2{
+    font-family: "lavvic",sans-serif;
+    color: white;
+}
+
+footer .newslatter p{
+      font-family:"lavvic",sans-serif ;
+    color:#3f4954 ;
+}
+footer .newslatter .form-element{
+    background: black;
+    display: inline-block;
+    padding: 0.2rem ;
+}
+footer .newslatter .form-element input{
+    padding: 0.5rem;
+    border: none;
+    background: #131313;
+    color: white;
+    width: 74%;
+    
+}
+footer .newslatter .form-element span{
+    background:#caf0f8; 
+    padding: .5rem .7rem;
+}
+
+footer .flex-row{
+    justify-self: unset;
+}
+
+footer .instagram div img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin:.3rem .4rem;
+    
+}

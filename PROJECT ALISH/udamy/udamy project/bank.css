@@ -1,0 +1,16 @@
+.box1 {
+  margin: 4em;
+  display: inline-block;
+  text-align: center;
+  width: 20em;
+  height: 20em;
+  background-color: turquoise;
+}
+.box2 {
+  margin: 4em;
+  display: inline-block;
+  text-align: center;
+  width: 20em;
+  height: 20em;
+  background-color: cornsilk;
+}

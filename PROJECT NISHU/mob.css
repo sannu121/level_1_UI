@@ -1,0 +1,74 @@
+@media screen and (max-width: 768px) {
+  header .navbar-brand {
+    padding-left: 1rem;
+  }
+  .section-2 .cover {
+    background-position: -25vmin -10vmin;
+  }
+  .section-2 {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  .masseges {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  footer .row .col-md-2 {
+    margin-top: 8vmin;
+  }
+  .section-2 {
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+  }
+  .para-text {
+    padding: 1rem;
+  }
+  .para-1 {
+    line-height: 1.6;
+    font-size: 18px;
+    word-spacing: 0.1rem;
+  }
+  .masseges {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-2 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .para-1 {
+    line-height: 1.6;
+    font-size: 17px;
+    word-spacing: 0.1rem;
+  }
+  .masseges {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section-2 {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+  }
+
+  .para-text {
+    padding: 0;
+  }
+  .para-1 {
+    line-height: 1.4;
+    font-size: 15px;
+    word-spacing: 0.1rem;
+  }
+  .masseges {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
